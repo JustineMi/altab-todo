@@ -92,8 +92,10 @@ function App() {
         <div className='confirmation-popup'>
           <div className='confirmation-popup-content'>
             <p>Are you sure you want to delete all tasks??</p>
+            <div className="popup-buttons">
             <button onClick={confirmDeleteAll}>Yes, delete !!</button>
             <button onClick={closeConfirmation}>No, cancel !!</button>
+            </div>
             </div>
           </div>
       )}

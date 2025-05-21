@@ -31,6 +31,7 @@ form {
 }
 
 .form-input {
+  color: #999;
   width: 100%;
   max-width: 770px;
   height: 45px;
@@ -96,15 +97,17 @@ form {
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  box-shadow: 0 1px 3px rbga(0, 0, 0, 0.1);
   transition: background 0.2s;
 }
 
 .todo-item:hover {
-  background-color: #fbf3ff;
+
   cursor: pointer;
+}
+
+.todo-check:hover{
   transform: scale(1.01);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .input-task {
@@ -121,12 +124,20 @@ form {
 }
 
 .delete-task {
-  background-color: #eee;
+  background-color: #643075;
+  color: #fff;
   border: none;
   border-radius: 5px;
   padding: 4px 8px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.delete-dask:hover {
+  background-color: #3a2541;
+  color: #fff;
 }
 
 .todo-check {
@@ -138,7 +149,7 @@ form {
   margin-bottom: 10px;
   border-radius: 8px;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rbga(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   font-size: 1rem;
 }
 
@@ -190,4 +201,77 @@ form {
   display: block;
   margin-bottom: 0.5rem;
   color:#999
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-content {
+  background-color: #fbf3ff;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.popup-content button {
+  background-color: #643075;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.popup-content button:hover {
+  background-color: #3a2541;
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.confirmation-popup-content {
+  background-color: #fbf3ff;
+  border: 2px solid #f8ebf9;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.confirmation-popup button {
+  background-color: #643075;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
 }
