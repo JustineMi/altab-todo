@@ -1,0 +1,193 @@
+body {
+  background-color: #fbf3ff;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  max-width: 800px;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: -3%;
+  text-align: start;
+  border-bottom: 1px solid #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 770px;
+  height: 45px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #643075;
+}
+
+.date-input {
+  height: 25px;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.task-button {
+  background-color: #2C2C2C;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: transparent;
+  display: flex;
+  padding: 10px 10px ;
+  border: none;
+  cursor: pointer;
+}
+
+.check-button {
+   background-color: #2c2c2c;
+   color: #fff;
+  display: flex;
+  margin-left: rem;
+  padding: 10px 10px ;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.todo-item {
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rbga(0, 0, 0, 0.1);
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #fbf3ff;
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0.5);
+}
+
+.input-task {
+  display: flex;
+  border: 1px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.delete-task {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rbga(0, 0, 0, 0.05);
+  font-size: 1rem;
+}
+
+.todo-check input[type="checkbox"] {
+  margin-right: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo-check input[type="checkbox"]:checked {
+  background-color: #3a2541;
+  border-color: #3a2541;
+}
+
+.todo-check input[type="checkbox"]:checked::after {
+  color: #fff;
+  content: '✓';
+  font-size: 14px;
+  position: absolute;
+  left: 3px;
+  top:-1px
+}
+
+.todo-check p {
+  flex: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa
+}
+
+.task-text {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.task-date {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color:#999
+}
